@@ -13,11 +13,10 @@ query = 'query{ boards (ids: 711201285){items(ids: 1392408871){name column_value
 #query = 'query{ boards (ids: 695791534){items{name column_values(ids:status1){value text}}}}'
 data = {'query' : query}
 
-#711201285 = Mattamy Homes  1392408871 
+#711201285 = Mattamy Homes
 #695791534 = Minto
 #718348165 = Caivan
 #1190887252 = Urbandale
-
 
 r = requests.post(url=apiUrl, json=data, headers=headers) # make request
 x = r.json()
